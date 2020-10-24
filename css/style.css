@@ -6,10 +6,6 @@ body{
   background-image: url('../images/concrete_seamless.png');
 }
 
-.about{
-  display: flex;
-}
-
 h1{
   font-size: 2em;
   text-align: center;
@@ -75,6 +71,10 @@ footer{
 /* Cards! */
 .pricing{
     min-height: 500px;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
     /*Your code here.*/
     /*Don't forget to vertically and horizontally alight the card*/
   
@@ -85,6 +85,7 @@ footer{
   background: #fff;
   border-radius: 7px;
   padding: 0 0 50px 0;
+  flex-basis: 400px;
   /*Your code here.*/
   /*Take a look at flex-basis*/
 
@@ -126,13 +127,16 @@ footer{
 
 .card_big{
   -webkit-transform: initial;
-          transform: initial;
+  transform: initial;
 }
 
 /* Gallery! */
 .gallery{
   min-height: 600px;
-  /*Your code here again.*/
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
 }
 
 .gallery > img{
@@ -145,11 +149,15 @@ footer{
 header{
   background: #fff;
   border-bottom: 3px solid #50C7C7;
-  /*Your  code here again.*/
+  display: flex;  
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .nav_links{
-  /*Your code here again.*/
+  justify-content: center;
+  flex-direction: column;
 }
 
 .nav_item a{
@@ -168,7 +176,7 @@ header{
 
   /* Cards! */
   .card {
-    /*Your  code here again.*/
+    flex-basis: 225px;
   }
 
   .card_big{
@@ -178,12 +186,17 @@ header{
 
   /* Navbar */
   header{
-    /*Your code here again.*/  
-  }
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: left;
+    }
 
   .nav_links{
-    /*Your code here again.*/  
-  }
+    flex-direction: row;
+    align-items: right;
+    justify-content: space-between;
+    }
 
   .nav_item a{
     padding: 10px;
