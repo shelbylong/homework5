@@ -6,6 +6,10 @@ body{
   background-image: url('../images/concrete_seamless.png');
 }
 
+.about{
+  display: flex;
+}
+
 h1{
   font-size: 2em;
   text-align: center;
@@ -54,18 +58,18 @@ footer{
 /*Keyframes for animation*/
 
 @-webkit-keyframes logo_wiggle{
-  /*Your code here.*/
-
+  from {width: 25px;}
+  to {width: 420px;}
 }
 
 @keyframes logo_wiggle{
-  /*Your code here.*/
-
+  from {width: 25px;}
+  to {width: 420px;}
 } 
 
 #logo{
-   /*Your code here.*/
- 
+  animation: logo_wiggle 15s forwards;
+  -webkit-animation: logo_wiggle 15s forwards;
 }
 
 /* Cards! */
