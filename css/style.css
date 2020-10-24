@@ -156,6 +156,8 @@ header{
 }
 
 .nav_links{
+  display: flex;
+  align-items: center;
   justify-content: center;
   flex-direction: column;
 }
@@ -193,6 +195,7 @@ header{
     }
 
   .nav_links{
+    display: flex;
     flex-direction: row;
     align-items: right;
     justify-content: space-between;
