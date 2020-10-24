@@ -72,7 +72,8 @@ footer{
 .pricing{
     min-height: 500px;
     display: flex;
-    flex-direction:column;
+    flex-direction:row;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     /*Your code here.*/
@@ -210,9 +211,27 @@ header{
   .card {
     flex-basis: 200px;
   }
+
+  body{
+    background-image: none;
+  }
+
+  .pricing{
+    align-items: flex-start;
+  }
+  
+  .gallery{
+    display: none;
+  }
+
+  #gallery{
+    display: none;
+  }
+
   /*Your code here again.*/
   /*You will want four selectors*/  
 }
 
 /*Your code here again.*/ 
 /*Add media query to handle reduced-motion*/
+
