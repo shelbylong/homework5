@@ -68,9 +68,9 @@ footer{
   -webkit-animation: logo_wiggle 3s forwards;
 }
 
-@media (prefers-reduced-motion){
+@media screen and (prefers-reduced-motion: reduce){ 
   #logo{
-    animation: dissolve;
+    animation: none;}
 }
 
 /* Cards! */
