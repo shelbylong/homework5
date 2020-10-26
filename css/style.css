@@ -68,6 +68,11 @@ footer{
   -webkit-animation: logo_wiggle 3s forwards;
 }
 
+@media (prefers-reduced-motion) {
+  #logo{
+    logo_wiggle: dissolve;
+}
+
 /* Cards! */
 .pricing{
     min-height: 500px;
@@ -186,6 +191,7 @@ header{
     -webkit-transform: scaleX(1.12);
             transform: scaleX(1.12);
   }
+  
 
   /* Navbar */
   header{
